@@ -1,14 +1,18 @@
 ﻿using BepInEx;
-
-namespace LethalCompanyTemplate
+using HarmonyLib;
+namespace FixedItemRotation
 {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin("FixedItemRotation", "FixedItemRotation", "0.0.1")]
     public class Plugin : BaseUnityPlugin
     {
+        private readonly Harmony harmony = new("FixedItemRotation");
+
         private void Awake()
         {
+            harmony.PatchAll();
             // Plugin startup logic
-            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+            Logger.LogInfo($"Plugin FixedItemRotation is loaded!");
+
         }
     }
 }
