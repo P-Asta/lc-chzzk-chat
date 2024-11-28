@@ -11,6 +11,7 @@ using System.Linq;
 using System.Reflection;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace ItemDeclutter
 {
@@ -28,7 +29,8 @@ namespace ItemDeclutter
 
             foreach (var item in ItemsOnShip)
             {
-                item.customGrabTooltip = StackTooltip.UpdateAllTooltips(item.name);
+                Plugin.logger.LogDebug($"Found {item.name}");
+                StackTooltip.UpdateAllTooltips(item.name);
             }
 
         }

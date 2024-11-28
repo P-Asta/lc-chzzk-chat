@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Logging;
 using HarmonyLib;
 namespace FixedItemRotation
 {
@@ -6,6 +7,7 @@ namespace FixedItemRotation
     public class Plugin : BaseUnityPlugin
     {
         private readonly Harmony harmony = new("FixedItemRotation");
+        internal static ManualLogSource logger;
 
         private void Awake()
         {

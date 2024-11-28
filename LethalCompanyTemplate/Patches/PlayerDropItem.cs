@@ -1,10 +1,5 @@
-using BepInEx.Logging;
 using GameNetcodeStuff;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEngine;
 
 namespace FixedItemRotation
@@ -31,6 +26,8 @@ namespace FixedItemRotation
             if (__instance.isInShipRoom)
             {
                 string itemName = __instance.itemProperties.itemName;
+                __instance.floorYRot = 1;
+                Plugin.logger.LogInfo($"dropped {itemName}");
                 __instance.customGrabTooltip = StackTooltip.UpdateAllTooltips(itemName);
             }
             else
