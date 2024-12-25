@@ -1,0 +1,7 @@
+{
+    "name": "FixedItemRotation",
+    "version_number": "1.0.1",
+    "website_url": "https://github.com/P-Asta/FixedItemRotation",
+    "description": "Fixes the angle to make it easier to organize items on the ship",
+    "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
+}
