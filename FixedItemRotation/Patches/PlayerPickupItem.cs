@@ -30,7 +30,6 @@ namespace FixedItemRotation
             if (grabbableObject == null) return;
 
             string itemName = grabbableObject.itemProperties.itemName;
-            grabbableObject.customGrabTooltip = StackTooltip.UpdateAllTooltips(itemName);
 
         }
 
