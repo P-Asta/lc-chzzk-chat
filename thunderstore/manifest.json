@@ -1,7 +1,12 @@
 {
-    "name": "ChzzkChat",
-    "version_number": "1.0.0",
-    "website_url": "https://github.com/P-Asta/lc-chzzk-chat",
-    "description": "치지직에 채팅/후원을 리썰채팅으로 가저옵니다",
-    "dependencies": ["BepInEx-BepInExPack-5.4.2100", "Bobbie-UniTask-2.5.0", "taffyko-NiceChat-1.2.7"]
+  "name": "ChzzkChat",
+  "version_number": "1.0.1",
+  "website_url": "https://github.com/P-Asta/lc-chzzk-chat",
+  "description": "치지직에 채팅/후원을 리썰채팅으로 가저옵니다",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "Bobbie-UniTask-2.5.0",
+    "taffyko-NiceChat-1.2.7",
+    "dotnet_lethal_company-WebSocketSharp_netstandard-1.0.100"
+  ]
 }
